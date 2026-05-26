@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Kona Venkat | Full Stack Web Developer Portfolio</title>
+  <meta name="description" content="Professional portfolio of Kona Venkat, a skilled Full Stack Web Developer. Explore projects, skills, competitive programming stats, certifications, and contact details.">
+  <meta name="keywords" content="Kona Venkat, Full Stack Developer, MERN Stack, React Developer, Tailwind CSS, Leetcode, CodeChef, Web Developer Portfolio">
+  <meta name="author" content="Kona Venkat">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kona Venkat | Full Stack Web Developer Portfolio">
+  <meta property="og:description" content="Explore my engineering journey, custom fullstack projects, competitive coding stats, and certifications.">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kona Venkat | Full Stack Web Developer Portfolio">
+  <meta name="twitter:description" content="Explore my engineering journey, custom fullstack projects, competitive coding stats, and certifications.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22 fill=%22%238b5cf6%22>KV</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            themeBg: '#030712',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- FontAwesome CDN for Brand Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="bg-[#030712] text-slate-100 antialiased relative min-h-screen">
+
+  <!-- Background Decorative Glowing Orbs -->
+  <div class="absolute top-[8%] left-[-10%] w-[45vw] h-[45vw] rounded-full bg-gradient-to-r from-violet-600/15 to-purple-600/10 blur-[130px] -z-10 pointer-events-none animate-pulse-slow"></div>
+  <div class="absolute top-[35%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-gradient-to-r from-cyan-600/15 to-indigo-600/10 blur-[120px] -z-10 pointer-events-none animate-pulse-slow" style="animation-delay: 2s;"></div>
+  <div class="absolute top-[65%] left-[-5%] w-[38vw] h-[38vw] rounded-full bg-gradient-to-r from-indigo-900/15 to-purple-900/10 blur-[110px] -z-10 pointer-events-none animate-pulse-slow" style="animation-delay: 4s;"></div>
+  <div class="absolute bottom-[5%] right-[10%] w-[35vw] h-[35vw] rounded-full bg-gradient-to-r from-violet-900/10 to-cyan-900/10 blur-[100px] -z-10 pointer-events-none animate-pulse-slow" style="animation-delay: 6s;"></div>
+
+  <!-- Header Navigation -->
+  <header id="navbar-header" class="fixed top-0 left-0 right-0 z-50 w-full py-6 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      
+      <!-- Logo -->
+      <a href="#hero" class="flex items-center space-x-2 text-2xl font-extrabold font-heading tracking-wider hover:opacity-95 transition-opacity" id="nav-logo">
+        <span class="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">Kona</span>
+        <span class="text-violet-500 font-black">Venkat</span>
+      </a>
+
+      <!-- Desktop Navigation Menu (7 Links matching 7 Modules) -->
+      <nav class="hidden xl:flex items-center space-x-7">
+        <a href="#hero" class="nav-link-desktop text-sm font-medium tracking-wide text-slate-300 hover:text-white transition-colors duration-200" id="link-hero">Home</a>
+        <a href="#about" class="nav-link-desktop text-sm font-medium tracking-wide text-slate-300 hover:text-white transition-colors duration-200" id="link-about">About Me</a>
+        <a href="#skills" class="nav-link-desktop text-sm font-medium tracking-wide text-slate-300 hover:text-white transition-colors duration-200" id="link-skills">Skills</a>
+        <a href="#projects" class="nav-link-desktop text-sm font-medium tracking-wide text-slate-300 hover:text-white transition-colors duration-200" id="link-projects">Projects</a>
+        <a href="#programming" class="nav-link-desktop text-sm font-medium tracking-wide text-slate-300 hover:text-white transition-colors duration-200" id="link-programming">Programming</a>
+        <a href="#certifications" class="nav-link-desktop text-sm font-medium tracking-wide text-slate-300 hover:text-white transition-colors duration-200" id="link-certifications">Certifications</a>
+        <a href="#contact" class="nav-link-desktop text-sm font-medium tracking-wide text-slate-300 hover:text-white transition-colors duration-200" id="link-contact">Contact</a>
+      </nav>
+
+      <!-- Desktop Action Button -->
+      <div class="hidden xl:block">
+        <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold border border-violet-500/30 bg-violet-950/20 text-violet-300 hover:bg-violet-600 hover:text-white hover:border-violet-600 shadow-sm transition-all duration-300" id="btn-hire-desktop">
+          Hire Me
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="xl:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-900/50 transition-colors" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+        <svg class="w-6 h-6" id="menu-icon-open" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg class="w-6 h-6 hidden" id="menu-icon-close" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="hidden xl:hidden absolute top-full left-0 right-0 py-6 px-6 glass flex-col space-y-4 border-b border-slate-800 shadow-2xl transition-all duration-300" id="mobile-menu">
+      <a href="#hero" class="nav-link-mobile px-4 py-2.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-900/50 transition-all font-medium" id="mob-link-hero">Home</a>
+      <a href="#about" class="nav-link-mobile px-4 py-2.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-900/50 transition-all font-medium" id="mob-link-about">About Me</a>
+      <a href="#skills" class="nav-link-mobile px-4 py-2.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-900/50 transition-all font-medium" id="mob-link-skills">Skills</a>
+      <a href="#projects" class="nav-link-mobile px-4 py-2.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-900/50 transition-all font-medium" id="mob-link-projects">Projects</a>
+      <a href="#programming" class="nav-link-mobile px-4 py-2.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-900/50 transition-all font-medium" id="mob-link-programming">Programming</a>
+      <a href="#certifications" class="nav-link-mobile px-4 py-2.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-900/50 transition-all font-medium" id="mob-link-certifications">Certifications</a>
+      <a href="#contact" class="nav-link-mobile px-4 py-2.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-900/50 transition-all font-medium" id="mob-link-contact">Contact</a>
+      <a href="#contact" class="block text-center py-3 rounded-xl bg-gradient-to-r from-violet-600 to-cyan-600 font-semibold text-white shadow-lg shadow-violet-900/20" id="btn-hire-mobile">
+        Hire Me
+      </a>
+    </div>
+  </header>
+
+  <!-- Module 1: Home (Hero Section) -->
+  <section id="hero" class="min-h-screen flex items-center justify-center pt-24 pb-12 px-6">
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Hero Text Column -->
+      <div class="lg:col-span-7 flex flex-col justify-center space-y-8 text-center lg:text-left scale-in active">
+        
+        <!-- Badge -->
+        <div class="inline-flex items-center self-center lg:self-start space-x-2 px-4 py-1.5 rounded-full glass border border-violet-500/20 text-xs font-semibold text-violet-400 tracking-wide shadow-inner animate-pulse">
+          <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
+          <span>Available for Full Stack Opportunities</span>
+        </div>
+
+        <!-- Name & Professional Title -->
+        <div class="space-y-4">
+          <p class="text-lg md:text-xl font-medium text-slate-400">Welcome to my space, I am</p>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold font-heading tracking-tight leading-none">
+            <span class="block text-white">Kona Venkat</span>
+            <span class="block mt-2 bg-gradient-to-r from-violet-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent font-black leading-normal">
+              <span id="typed-text">Full Stack Web Developer</span><span class="text-cyan-400 animate-pulse font-normal border-r-2 border-cyan-400 ml-1"></span>
+            </span>
+          </h1>
+        </div>
+
+        <!-- Introduction -->
+        <p class="text-base sm:text-lg text-slate-400 max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
+          A dedicated MERN stack engineer creating high-velocity, clean, and responsive web applications. I turn complex database schemas and visual designs into flawless, interactive user environments.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+          <a href="#projects" class="w-full sm:w-auto px-8 py-4 text-center rounded-xl bg-gradient-to-r from-violet-600 to-cyan-600 font-semibold text-white shadow-lg hover:shadow-glow-cyan shadow-violet-900/30 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300" id="hero-btn-projects">
+            View My Projects
+          </a>
+          <a href="#" class="w-full sm:w-auto px-8 py-4 text-center rounded-xl glass border border-slate-700 hover:border-violet-500/50 hover:bg-slate-900/40 font-semibold text-slate-200 hover:text-violet-400 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 flex items-center justify-center space-x-2" id="hero-btn-resume">
+            <i data-lucide="file-text" class="w-5 h-5 text-violet-400"></i>
+            <span>View My Resume</span>
+          </a>
+          <a href="#contact" class="w-full sm:w-auto px-8 py-4 text-center rounded-xl border border-dashed border-slate-700 hover:border-cyan-400/50 text-slate-400 hover:text-cyan-400 hover:scale-[1.03] transition-all duration-300 font-medium" id="hero-btn-contact">
+            Contact Me
+          </a>
+        </div>
+
+        <!-- Tech Badges Summary -->
+        <div class="pt-6 border-t border-slate-900 flex flex-wrap justify-center lg:justify-start items-center gap-6 text-slate-500 text-sm">
+          <span>Core Stack Focus:</span>
+          <div class="flex items-center space-x-5">
+            <i class="fab fa-react text-xl hover:text-cyan-400 transition-colors" title="React.js"></i>
+            <i class="fab fa-node-js text-xl hover:text-emerald-400 transition-colors" title="Node.js"></i>
+            <i class="fab fa-js-square text-xl hover:text-yellow-400 transition-colors" title="JavaScript"></i>
+            <i class="fas fa-database text-xl hover:text-green-500 transition-colors" title="MongoDB"></i>
+            <i class="fab fa-git-alt text-xl hover:text-orange-500 transition-colors" title="Git"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hero Visual Column (Custom Developer Profile Frame) -->
+      <div class="lg:col-span-5 flex justify-center scale-in active">
+        <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 group">
+          <!-- Animated Background Blobs -->
+          <div class="absolute inset-0 bg-gradient-to-r from-violet-600 to-cyan-400 rounded-3xl blur-2xl opacity-40 group-hover:opacity-60 transition-opacity duration-500 animate-pulse-slow"></div>
+          
+          <!-- Outer border spinning frame -->
+          <div class="absolute inset-0 bg-gradient-to-tr from-violet-600 via-indigo-600 to-cyan-400 p-[3px] rounded-3xl animate-float">
+            
+            <!-- Core visual container (Tech Graphics Panel) -->
+            <div class="h-full w-full bg-[#030712]/95 rounded-[21px] flex flex-col items-center justify-center p-6 relative overflow-hidden">
+              <div class="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+              
+              <!-- Floating source code elements -->
+              <div class="z-10 font-mono text-xs w-full text-violet-400/80 select-none">
+                <div class="text-emerald-400/80">&lt;DeveloperProfile&gt;</div>
+                <div class="pl-4">name: <span class="text-cyan-300">"Kona Venkat"</span>,</div>
+                <div class="pl-4">role: <span class="text-cyan-300">"Full Stack Developer"</span>,</div>
+                <div class="pl-4">specialty: [<span class="text-amber-400">"MERN"</span>, <span class="text-amber-400">"Tailwind"</span>, <span class="text-amber-400">"Git"</span>],</div>
+                <div class="pl-4 text-rose-400">coderRank: <span class="text-indigo-400">"3-Star / Specialist"</span>,</div>
+                <div class="pl-4 text-rose-400">hirable: <span class="text-indigo-400">true</span></div>
+                <div class="text-emerald-400/80">&lt;/DeveloperProfile&gt;</div>
+              </div>
+
+              <!-- Sleek SVG avatar/graphic representing fullstack web development -->
+              <svg class="w-32 h-32 mt-6 text-cyan-400 animate-float-delayed" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="20" width="70" height="50" rx="6" stroke="currentColor" stroke-width="3" fill="rgba(6,182,212,0.05)"/>
+                <path d="M15 60H85" stroke="currentColor" stroke-width="2"/>
+                <circle cx="25" cy="65" r="2.5" fill="currentColor"/>
+                <circle cx="35" cy="65" r="2.5" fill="currentColor"/>
+                <rect x="40" y="70" width="20" height="10" stroke="currentColor" stroke-width="3"/>
+                <path d="M30 80H70" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                <!-- Brackets inside screen -->
+                <path d="M42 32L34 40L42 48" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M58 32L66 40L58 48" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M52 30L48 50" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+              
+              <div class="absolute bottom-4 right-4 glass px-3 py-1 rounded-full text-[10px] text-cyan-400 border border-cyan-500/20 font-mono tracking-wider">
+                PORTFOLIO v2.0
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Module 2: About Me (Details) -->
+  <section id="about" class="py-24 px-6 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <h2 class="text-sm font-semibold tracking-widest text-violet-400 uppercase mb-3">Module 02</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold font-heading text-white">About Me Details</p>
+        <div class="w-16 h-1 bg-gradient-to-r from-violet-500 to-cyan-500 mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- About Left Column: Quick Stats -->
+        <div class="lg:col-span-5 flex flex-col space-y-6 reveal">
+          <div class="glass p-8 rounded-2xl border border-slate-800 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-violet-600/5 rounded-full blur-2xl"></div>
+            
+            <h3 class="text-xl font-bold font-heading text-white mb-6 flex items-center space-x-2">
+              <i data-lucide="user-check" class="w-5 h-5 text-violet-400"></i>
+              <span>Profile Snapshot</span>
+            </h3>
+            
+            <ul class="space-y-4">
+              <li class="flex items-start space-x-3">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <h4 class="font-semibold text-slate-200">Engineering Degree</h4>
+                  <p class="text-sm text-slate-400">B.Tech in Computer Science &amp; Engineering (2024-2028)</p>
+                </div>
+              </li>
+              <li class="flex items-start space-x-3">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <h4 class="font-semibold text-slate-200">Tech Specialization</h4>
+                  <p class="text-sm text-slate-400">Full Stack Web (MERN Stack, REST APIs, Tailwind CSS)</p>
+                </div>
+              </li>
+              <li class="flex items-start space-x-3">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <h4 class="font-semibold text-slate-200">Key Interests</h4>
+                  <p class="text-sm text-slate-400">Competitive Coding, UI/UX Animations, Scalable Backend Design</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- About Right Column: Dynamic Tabs -->
+        <div class="lg:col-span-7 space-y-8 reveal">
+          
+          <!-- Interactive Navigation Tabs -->
+          <div class="flex flex-wrap gap-2 border-b border-slate-800 pb-2">
+            <button class="about-tab-btn px-5 py-2.5 rounded-xl border border-violet-500/30 bg-violet-950/20 text-violet-400 text-sm font-semibold tracking-wide transition-all duration-200" data-tab="summary">
+              Summary
+            </button>
+            <button class="about-tab-btn px-5 py-2.5 rounded-xl border border-transparent text-slate-400 hover:text-slate-200 text-sm font-medium tracking-wide transition-all duration-200" data-tab="goals">
+              Career Goals
+            </button>
+            <button class="about-tab-btn px-5 py-2.5 rounded-xl border border-transparent text-slate-400 hover:text-slate-200 text-sm font-medium tracking-wide transition-all duration-200" data-tab="education">
+              Education
+            </button>
+            <button class="about-tab-btn px-5 py-2.5 rounded-xl border border-transparent text-slate-400 hover:text-slate-200 text-sm font-medium tracking-wide transition-all duration-200" data-tab="passion">
+              Passion for Web Dev
+            </button>
+          </div>
+
+          <!-- Tab Contents -->
+          <div class="min-h-[250px]">
+            
+            <!-- Tab: Summary -->
+            <div id="about-summary" class="about-tab-content block space-y-4">
+              <p class="text-slate-300 leading-relaxed font-light">
+                Hello! I am <strong class="text-white font-semibold">Kona Venkat</strong>, a focused Full Stack Web Developer. I specialize in designing and engineering high-fidelity web pages from scratch up to writing APIs and configuring structured MongoDB architectures.
+              </p>
+              <p class="text-slate-300 leading-relaxed font-light">
+                I love turning complex functional demands into beautiful, clean software systems. From responsive grids using Tailwind CSS to building interactive frontend loops using React, my code is written to be clean, modular, and performant.
+              </p>
+              <p class="text-slate-300 leading-relaxed font-light">
+                I enjoy collaborating with dynamic teams to ship production-ready web platforms.
+              </p>
+            </div>
+
+            <!-- Tab: Goals -->
+            <div id="about-goals" class="about-tab-content hidden space-y-4">
+              <h4 class="text-lg font-semibold text-white">My Career Roadmap</h4>
+              <p class="text-slate-300 leading-relaxed font-light">
+                My short-term target is to work as an assistant engineer/developer in an active software team where I can solve real architectural constraints, participate in agile code pipelines, and build production deployments.
+              </p>
+              <p class="text-slate-300 leading-relaxed font-light">
+                My long-term aspiration is to scale up to a Principal Solutions Architect, driving technological decisions, shaping microservice designs, and helping open-source communities.
+              </p>
+            </div>
+
+            <!-- Tab: Education -->
+            <div id="about-education" class="about-tab-content hidden space-y-6">
+              <div class="space-y-4">
+                <div class="flex justify-between items-start border-l-2 border-violet-500 pl-4">
+                  <div>
+                    <h5 class="font-bold text-white text-base">Bachelor of Technology in Computer Science & Engineering</h5>
+                    <p class="text-sm text-violet-400 font-medium">Vignan Institute of Information Technology</p>
+                    <p class="text-xs text-slate-400 mt-1">Acquired aggregate score: 8.7 CGPA. Deep study in Algorithms, Data Structures, Databases, and Software Engineering.</p>
+                  </div>
+                  <span class="text-xs bg-slate-900 border border-slate-800 text-slate-400 px-3 py-1 rounded-full font-mono">2024-28</span>
+                </div>
+                <div class="flex justify-between items-start border-l-2 border-violet-500/40 pl-4">
+                  <div>
+                    <h5 class="font-bold text-slate-300 text-base">Intermediate (MPC)</h5>
+                    <p class="text-sm text-slate-400 font-medium">sasi educational institutes</p>
+                    <p class="text-xs text-slate-500 mt-1">Aggregated score of 92.9% under the Board of Intermediate Education.</p>
+                  </div>
+                  <span class="text-xs bg-slate-900 border border-slate-800 text-slate-400 px-3 py-1 rounded-full font-mono">2022-2024</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab: Passion -->
+            <div id="about-passion" class="about-tab-content hidden space-y-4">
+              <p class="text-slate-300 leading-relaxed font-light">
+                To me, web development isn't just about scripting logical loops—it's about creating fluid user connections. I am obsessed with finding responsive layout harmonies, optimizing network queries, and bringing pages to life with responsive transitions.
+              </p>
+              <p class="text-slate-300 leading-relaxed font-light">
+                Whether it is testing state handlers, fine-tuning styling behaviors, or writing database index updates, I love learning and applying new engineering techniques every single day.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Module 3: Skills (Learned Technologies) -->
+  <section id="skills" class="py-24 px-6 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto">
+           <!-- Section Title -->
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <h2 class="text-sm font-semibold tracking-widest text-cyan-400 uppercase mb-3">Module 03</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold font-heading text-white">Skills & Technologies</p>
+        <div class="w-16 h-1 bg-gradient-to-r from-violet-500 to-cyan-500 mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <!-- Skill Categories Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-container reveal">
+        
+        <!-- Category 1: Languages -->
+        <div class="stagger-card bg-slate-900/30 p-8 rounded-2xl border border-slate-800/80 hover:border-violet-500/30 hover-gradient-border group transition-all duration-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center space-x-3 mb-6">
+              <span class="text-violet-400 font-mono text-xl font-bold">&lt;/&gt;</span>
+              <h3 class="text-xl font-bold font-heading text-white">Languages</h3>
+            </div>
+            
+            <div class="flex flex-wrap gap-3">
+              <!-- Java Badge -->
+              <div class="flex items-center space-x-2 bg-slate-950/40 hover:bg-slate-900/60 border border-slate-800/80 hover:border-violet-500/30 px-4 py-2.5 rounded-full text-slate-300 hover:text-white transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm">
+                <i class="fab fa-java text-[#e76f00] text-base"></i>
+                <span class="text-sm font-medium">Java</span>
+              </div>
+              
+              <!-- Python Badge -->
+              <div class="flex items-center space-x-2 bg-slate-950/40 hover:bg-slate-900/60 border border-slate-800/80 hover:border-violet-500/30 px-4 py-2.5 rounded-full text-slate-300 hover:text-white transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm">
+                <i class="fab fa-python text-[#3776ab] text-base"></i>
+                <span class="text-sm font-medium">Python</span>
+              </div>
+              
+              <!-- C Badge -->
+              <div class="flex items-center space-x-2 bg-slate-950/40 hover:bg-slate-900/60 border border-slate-800/80 hover:border-violet-500/30 px-4 py-2.5 rounded-full text-slate-300 hover:text-white transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm">
+                <span class="flex items-center justify-center w-5 h-5 rounded-full bg-[#00599c] text-white text-[10px] font-extrabold mr-0.5">C</span>
+                <span class="text-sm font-medium">C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Web Development -->
+        <div class="stagger-card bg-slate-900/30 p-8 rounded-2xl border border-slate-800/80 hover:border-cyan-500/30 hover-gradient-border group transition-all duration-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center space-x-3 mb-6">
+              <i class="fas fa-globe text-[#3b82f6] text-xl"></i>
+              <h3 class="text-xl font-bold font-heading text-white">Web Development</h3>
+            </div>
+            
+            <div class="flex flex-wrap gap-3">
+              <!-- HTML5 Badge -->
+              <div class="flex items-center space-x-2 bg-slate-950/40 hover:bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/30 px-4 py-2.5 rounded-full text-slate-300 hover:text-white transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm">
+                <i class="fab fa-html5 text-[#e34f26] text-base"></i>
+                <span class="text-sm font-medium">HTML5</span>
+              </div>
+              
+              <!-- CSS3 Badge -->
+              <div class="flex items-center space-x-2 bg-slate-950/40 hover:bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/30 px-4 py-2.5 rounded-full text-slate-300 hover:text-white transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm">
+                <i class="fab fa-css3-alt text-[#1572b6] text-base"></i>
+                <span class="text-sm font-medium">CSS3</span>
+              </div>
+              
+              <!-- Tailwind CSS Badge -->
+              <div class="flex items-center space-x-2 bg-slate-950/40 hover:bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/30 px-4 py-2.5 rounded-full text-slate-300 hover:text-white transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm">
+                <svg class="w-4 h-4 text-[#38bdf8]" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.002 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.336 13.382 8.975 12 6.001 12z"/>
+                </svg>
+                <span class="text-sm font-medium">Tailwind CSS</span>
+              </div>
+              
+              <!-- React Badge -->
+              <div class="flex items-center space-x-2 bg-slate-950/40 hover:bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/30 px-4 py-2.5 rounded-full text-slate-300 hover:text-white transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm">
+                <i class="fab fa-react text-[#61dafb] text-base animate-spin-slow"></i>
+                <span class="text-sm font-medium">React</span>
+              </div>
+              
+              <!-- Node.js Badge -->
+              <div class="flex items-center space-x-2 bg-slate-950/40 hover:bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/30 px-4 py-2.5 rounded-full text-slate-300 hover:text-white transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm">
+                <i class="fab fa-node-js text-[#339933] text-base"></i>
+                <span class="text-sm font-medium">Node.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Database & Tools -->
+        <div class="stagger-card bg-slate-900/30 p-8 rounded-2xl border border-slate-800/80 hover:border-emerald-500/30 hover-gradient-border group transition-all duration-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center space-x-3 mb-6">
+              <i class="fas fa-database text-[#22c55e] text-xl"></i>
+              <h3 class="text-xl font-bold font-heading text-white">Database & Tools</h3>
+            </div>
+            
+            <div class="flex flex-wrap gap-3">
+              <!-- MySQL Badge -->
+              <div class="flex items-center space-x-2 bg-slate-950/40 hover:bg-slate-900/60 border border-slate-800/80 hover:border-emerald-500/30 px-4 py-2.5 rounded-full text-slate-300 hover:text-white transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm">
+                <i class="fas fa-database text-[#00758f] text-base"></i>
+                <span class="text-sm font-medium">MySQL</span>
+              </div>
+              
+              <!-- Git Badge -->
+              <div class="flex items-center space-x-2 bg-slate-950/40 hover:bg-slate-900/60 border border-slate-800/80 hover:border-emerald-500/30 px-4 py-2.5 rounded-full text-slate-300 hover:text-white transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm">
+                <i class="fab fa-git-alt text-[#f05032] text-base"></i>
+                <span class="text-sm font-medium">Git</span>
+              </div>
+              
+              <!-- GitHub Badge -->
+              <div class="flex items-center space-x-2 bg-slate-950/40 hover:bg-slate-900/60 border border-slate-800/80 hover:border-emerald-500/30 px-4 py-2.5 rounded-full text-slate-300 hover:text-white transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm">
+                <i class="fab fa-github text-white text-base"></i>
+                <span class="text-sm font-medium">GitHub</span>
+              </div>
+              
+              <!-- VS Code Badge -->
+              <div class="flex items-center space-x-2 bg-slate-950/40 hover:bg-slate-900/60 border border-slate-800/80 hover:border-emerald-500/30 px-4 py-2.5 rounded-full text-slate-300 hover:text-white transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm">
+                <svg class="w-4 h-4 text-[#007acc]" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23.984 6.742a.573.573 0 0 0-.272-.493l-4.537-2.617a.575.575 0 0 0-.573 0l-4.537 2.617a.573.573 0 0 0-.272.493v5.234L3.896 5.86a.574.574 0 0 0-.583-.008L.279 7.625a.575.575 0 0 0-.279.497v7.756c0 .204.108.391.279.497l3.034 1.773a.575.575 0 0 0 .583-.008l9.897-6.115v5.234a.573.573 0 0 0 .272.493l4.537 2.617a.575.575 0 0 0 .573 0l4.537-2.617a.573.573 0 0 0 .272-.493V6.742zM1.149 15.226V8.774l2.164-1.264 4.544 2.805-4.544 2.806-2.164-1.265zm12.593-5.263l-3.328 2.037-3.328-2.037 3.328-2.037 3.328 2.037zm5.127 9.429l-3.388-1.956V6.564l3.388-1.956v15.048z"/>
+                </svg>
+                <span class="text-sm font-medium">VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Module 4: Featured Projects (Worked Projects) -->
+  <section id="projects" class="py-24 px-6 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto">
+           <!-- Section Title -->
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <h2 class="text-sm font-semibold tracking-widest text-violet-400 uppercase mb-3">Module 04</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold font-heading text-white">Featured Projects</p>
+        <div class="w-16 h-1 bg-gradient-to-r from-violet-500 to-cyan-500 mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
+        
+        <!-- Card 1: Student Knowledge Management Quiz -->
+        <div class="project-card bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden group hover:border-violet-500/20 transition-all duration-300 flex flex-col h-full" data-category="frontend">
+          <!-- Quiz Graphic -->
+          <div class="relative h-56 bg-slate-950/60 overflow-hidden flex items-center justify-center border-b border-slate-800">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-75 z-10"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(#1e1b4b_1px,transparent_1px)] [background-size:16px_16px] opacity-40"></div>
+            
+            <svg class="w-40 h-40 text-violet-400 group-hover:scale-105 transition-transform duration-500 z-20" fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <!-- Quiz clipboard -->
+              <rect x="25" y="12" width="50" height="76" rx="6" stroke="currentColor" stroke-width="2"/>
+              <rect x="38" y="6" width="24" height="12" rx="4" stroke="currentColor" stroke-width="2" fill="#030712"/>
+              <circle cx="50" cy="12" r="2.5" fill="currentColor"/>
+              <!-- Question mark -->
+              <text x="50" y="52" text-anchor="middle" fill="currentColor" font-size="24" font-weight="bold" font-family="sans-serif">?</text>
+              <!-- Checklist lines -->
+              <rect x="33" y="60" width="6" height="6" rx="1.5" stroke="#06b6d4" stroke-width="1.5" fill="rgba(6,182,212,0.15)"/>
+              <line x1="43" y1="63" x2="65" y2="63" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round"/>
+              <rect x="33" y="72" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="43" y1="75" x2="60" y2="75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <!-- Checkmark in first box -->
+              <path d="M34.5 63L36 64.5L38 61" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Star decoration -->
+              <path d="M72 18L73.5 21L77 21.5L74.5 24L75 27.5L72 26L69 27.5L69.5 24L67 21.5L70.5 21L72 18Z" fill="#eab308"/>
+            </svg>
+            <div class="absolute top-4 right-4 glass px-3 py-1 rounded-full text-[10px] font-mono text-violet-400 border border-violet-500/20 uppercase tracking-wider z-20">
+              Interactive Quiz
+            </div>
+          </div>
+
+          <div class="p-8 flex flex-col flex-grow space-y-4">
+            <h3 class="text-2xl font-bold font-heading text-white">Student Knowledge Management Quiz</h3>
+            <p class="text-slate-400 font-light text-sm leading-relaxed flex-grow">
+              An interactive quiz platform designed to test and enhance programming knowledge across multiple languages including C, C++, Java, Python, HTML, CSS, and JavaScript. Features topic selection, timed questions, and instant score tracking.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-3 py-1 bg-slate-950 border border-slate-800/80 rounded-md text-xs font-mono text-slate-300">HTML5</span>
+              <span class="px-3 py-1 bg-slate-950 border border-slate-800/80 rounded-md text-xs font-mono text-slate-300">CSS3</span>
+              <span class="px-3 py-1 bg-slate-950 border border-slate-800/80 rounded-md text-xs font-mono text-slate-300">JavaScript</span>
+            </div>
+            
+            <div class="flex items-center space-x-4 pt-4 border-t border-slate-900">
+              <a href="file:///C:/Users/jayak/OneDrive/Desktop/Quiz-main/index.html" target="_blank" class="flex-1 py-2.5 rounded-lg bg-violet-600 hover:bg-violet-500 text-white font-semibold text-center text-xs flex items-center justify-center space-x-2 transition-all">
+                <i class="fas fa-external-link-alt"></i> <span>Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Eco-Meter -->
+        <div class="project-card bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden group hover:border-cyan-500/20 transition-all duration-300 flex flex-col h-full" data-category="fullstack">
+          <!-- Electricity Graphic -->
+          <div class="relative h-56 bg-slate-950/60 overflow-hidden flex items-center justify-center border-b border-slate-800">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-75 z-10"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(#134e4a_1px,transparent_1px)] [background-size:14px_14px] opacity-35"></div>
+            
+            <svg class="w-40 h-40 text-cyan-400 group-hover:scale-105 transition-transform duration-500 z-20" fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <!-- Meter gauge -->
+              <circle cx="50" cy="55" r="30" stroke="currentColor" stroke-width="2.5" stroke-dasharray="140 48" fill="none"/>
+              <!-- Gauge arc segments -->
+              <path d="M25 68A30 30 0 0 1 50 25" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <path d="M50 25A30 30 0 0 1 68 35" stroke="#eab308" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <path d="M68 35A30 30 0 0 1 75 68" stroke="#ef4444" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <!-- Needle -->
+              <line x1="50" y1="55" x2="42" y2="35" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="50" cy="55" r="4" fill="currentColor"/>
+              <circle cx="50" cy="55" r="2" fill="#030712"/>
+              <!-- Lightning bolt -->
+              <path d="M78 12L72 22H78L71 34" stroke="#eab308" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- KWH label -->
+              <text x="50" y="72" text-anchor="middle" fill="currentColor" font-size="7" font-weight="bold" font-family="monospace">kWh</text>
+              <!-- Leaf icon -->
+              <path d="M22 18C22 18 26 12 34 12C34 12 34 20 28 24C26 25 24 24 22 22" stroke="#22c55e" stroke-width="1.5" fill="rgba(34,197,94,0.15)" stroke-linecap="round"/>
+            </svg>
+            <div class="absolute top-4 right-4 glass px-3 py-1 rounded-full text-[10px] font-mono text-cyan-400 border border-cyan-500/20 uppercase tracking-wider z-20">
+              Electricity Mgmt
+            </div>
+          </div>
+
+          <div class="p-8 flex flex-col flex-grow space-y-4">
+            <h3 class="text-2xl font-bold font-heading text-white">Eco-Meter</h3>
+            <p class="text-slate-400 font-light text-sm leading-relaxed flex-grow">
+              A smart electricity management dashboard that helps users monitor, track, and optimize their energy consumption. Features real-time kWh usage visualization, cost estimation, and eco-friendly power saving recommendations.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-3 py-1 bg-slate-950 border border-slate-800/80 rounded-md text-xs font-mono text-slate-300">HTML5</span>
+              <span class="px-3 py-1 bg-slate-950 border border-slate-800/80 rounded-md text-xs font-mono text-slate-300">CSS3</span>
+              <span class="px-3 py-1 bg-slate-950 border border-slate-800/80 rounded-md text-xs font-mono text-slate-300">JavaScript</span>
+            </div>
+            
+            <div class="flex items-center space-x-4 pt-4 border-t border-slate-900">
+              <a href="https://kwh-pal.lovable.app/" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 rounded-lg bg-violet-600 hover:bg-violet-500 text-white font-semibold text-center text-xs flex items-center justify-center space-x-2 transition-all">
+                <i class="fas fa-external-link-alt"></i> <span>Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Module 5: Competitive Programming (CodeChef & LeetCode) -->
+  <section id="programming" class="py-24 px-6 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <h2 class="text-sm font-semibold tracking-widest text-cyan-400 uppercase mb-3">Module 05</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold font-heading text-white">Competitive Programming</p>
+        <div class="w-16 h-1 bg-gradient-to-r from-violet-500 to-cyan-500 mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <!-- Programming Platforms Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
+        
+        <!-- LeetCode Profile Card -->
+        <div class="glass p-8 rounded-2xl border border-slate-800 hover:border-[#f7a115]/30 shadow-glow-leetcode transition-all duration-300 flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <!-- Header: Logo and Brand -->
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-[#f7a115]">
+                  <!-- Custom LeetCode SVG Logo -->
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.483 0a1.374 1.374 0 0 0-.961.414l-9.8 9.8a1.375 1.375 0 0 0 0 1.956l1.956 1.956a1.375 1.375 0 0 0 1.956 0l9.8-9.8a1.375 1.375 0 0 0 0-1.956L14.444.414A1.374 1.374 0 0 0 13.483 0zm-5.836 12.358a1.375 1.375 0 0 0-1.956 0l-1.956 1.956a1.375 1.375 0 0 0 0 1.956l9.8 9.8a1.375 1.375 0 0 0 1.956 0l1.956-1.956a1.375 1.375 0 0 0 0-1.956l-9.8-9.8zM23.586 10.642a1.375 1.375 0 0 0 0-1.956l-1.956-1.956a1.375 1.375 0 0 0-1.956 0l-3.328 3.328a1.375 1.375 0 0 0 0 1.956l1.956 1.956a1.375 1.375 0 0 0 1.956 0l3.328-3.328z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold font-heading text-white">LeetCode</h3>
+                  <p class="text-xs text-slate-400">@kona_venkat_dev</p>
+                </div>
+              </div>
+              <span class="text-xs font-mono font-bold text-[#f7a115] bg-[#f7a115]/10 border border-[#f7a115]/20 px-3 py-1 rounded-full">Active Coder</span>
+            </div>
+
+            
+
+            <!-- Details -->
+            <ul class="space-y-2 pt-2 text-sm text-slate-400 font-light">
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Top 8% worldwide in weekly rating contests</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Strong focus on Dynamic Programming & Graphs</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://leetcode.com/u/venkatkona/" target="_blank" rel="noopener noreferrer" class="w-full py-3 bg-[#f7a115] hover:bg-[#de8f0f] text-white text-center font-bold rounded-xl text-sm flex items-center justify-center space-x-2 transition-all">
+            <span>View LeetCode Profile</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- CodeChef Profile Card -->
+        <div class="glass p-8 rounded-2xl border border-slate-800 hover:border-[#c49a6c]/30 shadow-glow-codechef transition-all duration-300 flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <!-- Header -->
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 rounded-xl bg-[#c49a6c]/10 flex items-center justify-center text-[#c49a6c]">
+                  <!-- Custom CodeChef Chef Hat SVG -->
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0c-4.418 0-8 3.582-8 8v4c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2V8c0-4.418-3.582-8-8-8zm4 12H8V8c0-2.206 1.794-4 4-4s4 1.794 4 4v4zm-1.8 4c-.7 1.2-2 2-3.5 2s-2.8-.8-3.5-2H2c-1.1 0-2 .9-2 2v2c0 2.2 1.8 4 4 4h16c2.2 0 4-1.8 4-4v-2c0-1.1-.9-2-2-2h-5.2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold font-heading text-white">CodeChef</h3>
+                  <p class="text-xs text-slate-400">@kona_venkat</p>
+                </div>
+              </div>
+              <span class="text-xs font-mono font-bold text-[#c49a6c] bg-[#c49a6c]/10 border border-[#c49a6c]/20 px-3 py-1 rounded-full">3-Star Coder</span>
+            </div>
+
+            <!-- Details -->
+            <ul class="space-y-2 pt-2 text-sm text-slate-400 font-light">
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Ranked within top 100 in multiple Div 3 contests</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Strong command on sorting, search, and greedy loops</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://www.codechef.com/users/venkatkona" target="_blank" rel="noopener noreferrer" class="w-full py-3 bg-[#c49a6c] hover:bg-[#ad8355] text-white text-center font-bold rounded-xl text-sm flex items-center justify-center space-x-2 transition-all">
+            <span>View CodeChef Profile</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Module 6: Certifications (Certificates I Owned) -->
+  <section id="certifications" class="py-24 px-6 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <h2 class="text-sm font-semibold tracking-widest text-violet-400 uppercase mb-3">Module 06</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold font-heading text-white">Certifications Owned</p>
+        <div class="w-16 h-1 bg-gradient-to-r from-violet-500 to-cyan-500 mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <!-- Certifications Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+        
+        <!-- Cert 1: Hour of Code -->
+        <div class="glass p-6 rounded-2xl border border-slate-800 hover:border-violet-500/20 transition-all duration-300 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center overflow-hidden">
+                <!-- Custom Code.org SVG Logo -->
+                <svg class="w-8 h-8" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="100" height="100" rx="15" fill="#000000"/>
+                  <!-- C -->
+                  <rect x="12" y="12" width="34" height="34" rx="8" fill="#ffffff"/>
+                  <text x="29" y="38" font-family="sans-serif" font-weight="900" font-size="28" fill="#000000" text-anchor="middle">C</text>
+                  <!-- O -->
+                  <rect x="54" y="12" width="34" height="34" rx="8" fill="#ffffff"/>
+                  <text x="71" y="38" font-family="sans-serif" font-weight="900" font-size="28" fill="#000000" text-anchor="middle">O</text>
+                  <!-- D -->
+                  <rect x="12" y="54" width="34" height="34" rx="8" fill="#ffffff"/>
+                  <text x="29" y="80" font-family="sans-serif" font-weight="900" font-size="28" fill="#000000" text-anchor="middle">D</text>
+                  <!-- E -->
+                  <rect x="54" y="54" width="34" height="34" rx="8" fill="#ffffff"/>
+                  <text x="71" y="80" font-family="sans-serif" font-weight="900" font-size="28" fill="#000000" text-anchor="middle">E</text>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold font-heading text-slate-200 text-lg leading-snug">The Hour of Code</h4>
+                <p class="text-xs text-slate-400">Code.org</p>
+              </div>
+            </div>
+            <p class="text-xs text-slate-500 leading-relaxed font-light pt-2">Demonstrated a comprehensive understanding of the foundational concepts of computer science and computational thinking through interactive problem-solving modules.</p>
+          </div>
+          <div class="pt-4 border-t border-slate-900 flex items-center justify-between">
+            <span class="text-[10px] text-violet-450 font-mono">Foundational CS</span>
+            <a href="../../brain/05463751-56fe-461a-9fdc-6b00d471171a/media__1779773873441.jpg" target="_blank" class="text-xs font-semibold text-violet-400 hover:underline flex items-center space-x-1">
+              <span>View Certificate</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cert 2: Python Essentials 1 -->
+        <div class="glass p-6 rounded-2xl border border-slate-800 hover:border-cyan-500/20 transition-all duration-300 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center overflow-hidden">
+                <!-- Custom Python SVG Logo -->
+                <svg class="w-7 h-7 text-[#3776ab]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.25.18c.9 0 1.66.73 1.66 1.65v2.7h-3.37c-1.38 0-2.5 1.11-2.5 2.5v2.47H6.71c-1.38 0-2.5 1.11-2.5 2.5v3.37h-2.7a1.65 1.65 0 0 1-1.65-1.66V8.12c0-.9.73-1.66 1.65-1.66h2.7v-2.7A3.6 3.6 0 0 1 7.82.18h6.43zm-4.7 3.37a.84.84 0 1 0 0-1.68.84.84 0 0 0 0 1.68zM9.75 23.82c-.9 0-1.66-.73-1.66-1.65v-2.7h3.37c1.38 0 2.5-1.11 2.5-2.5v-2.47h3.33c1.38 0 2.5-1.11 2.5-2.5v-3.37h2.7c.9 0 1.65.73 1.65 1.66v5.59c0 .9-.73 1.66-1.65 1.66h-2.7v2.7a3.6 3.6 0 0 1-3.61 3.58H9.75zm4.7-3.37a.84.84 0 1 0 0 1.68.84.84 0 0 0 0-1.68z"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold font-heading text-slate-200 text-lg leading-snug">Python Essentials 1</h4>
+                <p class="text-xs text-slate-400">Cisco Networking Academy / OpenEDG</p>
+              </div>
+            </div>
+            <p class="text-xs text-slate-500 leading-relaxed font-light pt-2">Completed foundational coursework on core Python concepts: values, variables, conditional execution, loops, lists, logical operations, functions, parameters, and scopes.</p>
+          </div>
+          <div class="pt-4 border-t border-slate-900 flex items-center justify-between">
+            <span class="text-[10px] text-cyan-450 font-mono">Python Programming</span>
+            <a href="file:///C:/Users/jayak/OneDrive/Desktop/new%20one/Python_Essentials_1_certificate_venkatkona306-gmail-com_fd599cd0-ae9d-4843-87c7-63ac610fcca4.pdf" target="_blank" class="text-xs font-semibold text-cyan-400 hover:underline flex items-center space-x-1">
+              <span>View Certificate</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cert 3: Infosys Springboard -->
+        <div class="glass p-6 rounded-2xl border border-slate-800 hover:border-blue-500/20 transition-all duration-300 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center overflow-hidden">
+                <!-- Custom Infosys Theme SVG Logo -->
+                <svg class="w-8 h-8 text-[#007cc3]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2 17l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold font-heading text-slate-200 text-lg leading-snug">Springboard Certification</h4>
+                <p class="text-xs text-slate-400">Infosys</p>
+              </div>
+            </div>
+            <p class="text-xs text-slate-500 leading-relaxed font-light pt-2">Successfully completed professional development coursework covering corporate technologies, digital concepts, and core technical skills via the Infosys Springboard curriculum.</p>
+          </div>
+          <div class="pt-4 border-t border-slate-900 flex items-center justify-between">
+            <span class="text-[10px] text-blue-450 font-mono">Professional Development</span>
+            <a href="file:///C:/Users/jayak/Downloads/infosys.pdf" target="_blank" class="text-xs font-semibold text-blue-400 hover:underline flex items-center space-x-1">
+              <span>View Certificate</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cert 4: C Essentials 1 -->
+        <div class="glass p-6 rounded-2xl border border-slate-800 hover:border-amber-500/20 transition-all duration-300 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center overflow-hidden">
+                <!-- Custom C SVG Logo -->
+                <svg class="w-7 h-7 text-[#00599c]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c3.31 0 6.27-1.62 8.1-4.1l-2.4-1.8C16.14 17.65 14.2 18.5 12 18.5c-3.59 0-6.5-2.91-6.5-6.5S8.41 5.5 12 5.5c2.2 0 4.14.85 5.7 2.4l2.4-1.8C18.27 3.62 15.31 2 12 2z"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold font-heading text-slate-200 text-lg leading-snug">C Essentials 1</h4>
+                <p class="text-xs text-slate-400">Cisco Networking Academy</p>
+              </div>
+            </div>
+            <p class="text-xs text-slate-500 leading-relaxed font-light pt-2">Coursework completed through Vignan's Institute of Information Technology covering foundational programming structures, data types, operators, flow control, and functions in C.</p>
+          </div>
+          <div class="pt-4 border-t border-slate-900 flex items-center justify-between">
+            <span class="text-[10px] text-amber-500 font-mono">C Programming</span>
+            <a href="file:///C:/Users/jayak/Downloads/_certificate_venkatkona306-gmail-com_b36b9c13-b999-4256-8a95-15ff283ceaed.pdf" target="_blank" class="text-xs font-semibold text-amber-405 hover:underline flex items-center space-x-1">
+              <span>View Certificate</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cert 5: HTML Essentials -->
+        <div class="glass p-6 rounded-2xl border border-slate-800 hover:border-orange-500/20 transition-all duration-300 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center overflow-hidden">
+                <!-- Custom HTML5 SVG Logo -->
+                <svg class="w-7 h-7 text-[#e34f26]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 0h21l-1.9 21.2L12 24 3.4 21.2 1.5 0zm16.5 6H7l.3 3.4h9.1l-.3 3.5-3.6 1-3.6-1-.2-2.3H6l.4 4.8 5.6 1.5 5.6-1.5.7-7.7.1-1.2.1-1.2z"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold font-heading text-slate-200 text-lg leading-snug">HTML Essentials</h4>
+                <p class="text-xs text-slate-400">Cisco Networking Academy / JS Institute</p>
+              </div>
+            </div>
+            <p class="text-xs text-slate-500 leading-relaxed font-light pt-2">Coursework completed through Vignan's Institute of Information Technology covering webpage layouts, syntax, elements, structural semantics, and web accessibility principles.</p>
+          </div>
+          <div class="pt-4 border-t border-slate-900 flex items-center justify-between">
+            <span class="text-[10px] text-orange-400 font-mono">Web Development</span>
+            <a href="file:///C:/Users/jayak/Downloads/HTML_Essentials_certificate_venkatkona306-gmail-com_744a34f0-abcd-4075-8993-286a78b77113.pdf" target="_blank" class="text-xs font-semibold text-orange-400 hover:underline flex items-center space-x-1">
+              <span>View Certificate</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cert 6: JavaScript Essentials 1 -->
+        <div class="glass p-6 rounded-2xl border border-slate-800 hover:border-yellow-500/20 transition-all duration-300 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center overflow-hidden">
+                <!-- Custom JS SVG Logo -->
+                <svg class="w-7 h-7" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="24" height="24" rx="3" fill="#f7df1e"/>
+                  <text x="21" y="19" font-family="sans-serif" font-weight="bold" font-size="14" fill="#000000" text-anchor="end">JS</text>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold font-heading text-slate-200 text-lg leading-snug">JavaScript Essentials 1</h4>
+                <p class="text-xs text-slate-400">Cisco Networking Academy / JS Institute</p>
+              </div>
+            </div>
+            <p class="text-xs text-slate-500 leading-relaxed font-light pt-2">Coursework completed through Vignan's Institute of Information Technology covering JavaScript variables, data types, logic control, arrays, loops, and basic functions.</p>
+          </div>
+          <div class="pt-4 border-t border-slate-900 flex items-center justify-between">
+            <span class="text-[10px] text-yellow-400 font-mono">JS Programming</span>
+            <a href="file:///C:/Users/jayak/Downloads/JavaScript_Essentials_1_certificate_venkatkona306-gmail-com_d37232f9-5d11-43fb-9cbf-818292dd7a2d.pdf" target="_blank" class="text-xs font-semibold text-yellow-405 hover:underline flex items-center space-x-1">
+              <span>View Certificate</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cert 7: JavaScript Essentials 2 -->
+        <div class="glass p-6 rounded-2xl border border-slate-800 hover:border-yellow-600/20 transition-all duration-300 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center overflow-hidden">
+                <!-- Custom JS Level 2 SVG Logo -->
+                <svg class="w-7 h-7" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="24" height="24" rx="3" fill="#f7df1e"/>
+                  <text x="14" y="19" font-family="sans-serif" font-weight="bold" font-size="14" fill="#000000" text-anchor="end">JS</text>
+                  <circle cx="19" cy="8" r="4.5" fill="#1e293b"/>
+                  <text x="19" y="11.5" font-family="sans-serif" font-weight="bold" font-size="9" fill="#ffffff" text-anchor="middle">2</text>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold font-heading text-slate-200 text-lg leading-snug">JavaScript Essentials 2</h4>
+                <p class="text-xs text-slate-400">Cisco Networking Academy / JS Institute</p>
+              </div>
+            </div>
+            <p class="text-xs text-slate-500 leading-relaxed font-light pt-2">Coursework completed through Vignan's Institute of Information Technology covering advanced object-oriented programming, exception handling, and asynchronous JavaScript.</p>
+          </div>
+          <div class="pt-4 border-t border-slate-900 flex items-center justify-between">
+            <span class="text-[10px] text-yellow-500 font-mono">JS Programming</span>
+            <a href="file:///C:/Users/jayak/Downloads/JavaScript_Essentials_2_certificate_venkatkona306-gmail-com_daea9365-4d95-446e-862f-2522a4ffbeea.pdf" target="_blank" class="text-xs font-semibold text-yellow-405 hover:underline flex items-center space-x-1">
+              <span>View Certificate</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>    </div>
+  </section>
+
+  <!-- Module 7: Contact (Contact Form & Socials) -->
+  <section id="contact" class="py-24 px-6 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <h2 class="text-sm font-semibold tracking-widest text-violet-400 uppercase mb-3">Module 07</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold font-heading text-white">Let's Connect</p>
+        <div class="w-16 h-1 bg-gradient-to-r from-violet-500 to-cyan-500 mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+        
+        <!-- Info Column -->
+        <div class="lg:col-span-5 flex flex-col justify-between space-y-8 reveal">
+          
+          <div class="space-y-6">
+            <h3 class="text-2xl font-bold font-heading text-white">Discuss Collaboration</h3>
+            <p class="text-slate-400 leading-relaxed font-light">
+              Interested in full-stack collaboration, have an open role, or want to discuss competitive coding? Fire a message directly and I will respond within 24 hours.
+            </p>
+          </div>
+
+          <!-- Contact items -->
+          <div class="space-y-5">
+            <div class="flex items-center space-x-4 p-4 rounded-xl bg-slate-900/30 border border-slate-800/80">
+              <a href="mailto:venkatkona306@gmail.com" class="w-10 h-10 rounded-lg bg-violet-950/20 text-violet-400 flex items-center justify-center hover:bg-violet-900/30 transition-colors cursor-pointer" title="Send Email">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </a>
+              <div>
+                <span class="text-xs text-slate-500 block">Email Address</span>
+                <a href="mailto:venkatkona306@gmail.com" class="text-sm font-medium text-slate-200 hover:text-violet-400 transition-colors">venkatkona306@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-4 p-4 rounded-xl bg-slate-900/30 border border-slate-800/80">
+              <div class="w-10 h-10 rounded-lg bg-cyan-950/20 text-cyan-400 flex items-center justify-center">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-500 block">Location</span>
+                <span class="text-sm font-medium text-slate-200">West Godavari, Andhra Pradesh, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social links -->
+          <div class="space-y-4">
+            
+            <div class="flex items-center space-x-4">
+              <a href="https://github.com/Venkat907" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 hover:border-violet-500 hover:text-violet-400 flex items-center justify-center text-slate-400 transition-all shadow-md hover:scale-105" aria-label="GitHub Profile">
+                <i class="fab fa-github text-xl"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/kona-venkat/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500 hover:text-cyan-400 flex items-center justify-center text-slate-400 transition-all shadow-md hover:scale-105" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin-in text-xl"></i>
+              </a>
+              <a href="mailto:venkatkona306@gmail.com" class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 hover:border-violet-500 hover:text-violet-400 flex items-center justify-center text-slate-400 transition-all shadow-md hover:scale-105" aria-label="Send Email">
+                <i class="far fa-envelope text-xl"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Form Column -->
+        <div class="lg:col-span-7 reveal">
+          <div class="glass p-8 rounded-2xl border border-slate-800 shadow-2xl relative">
+            <div id="form-alert" class="mb-6 space-y-4"></div>
+
+            <form id="contact-form" class="space-y-6">
+              
+              <div class="space-y-2">
+                <label for="user_name" class="text-sm font-semibold text-slate-300 block">Name</label>
+                <div class="relative">
+                  <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+                    <i data-lucide="user" class="w-4 h-4"></i>
+                  </div>
+                  <input type="text" id="user_name" name="name" required class="w-full bg-slate-950/60 border border-slate-800 rounded-xl py-3 pl-10 pr-4 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-950/50 transition-colors" placeholder="Enter your full name">
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <label for="user_email" class="text-sm font-semibold text-slate-300 block">Email</label>
+                <div class="relative">
+                  <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+                    <i data-lucide="mail" class="w-4 h-4"></i>
+                  </div>
+                  <input type="email" id="user_email" name="email" required class="w-full bg-slate-950/60 border border-slate-800 rounded-xl py-3 pl-10 pr-4 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-950/50 transition-colors" placeholder="example@gmail.com">
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <label for="user_message" class="text-sm font-semibold text-slate-300 block">Message</label>
+                <div class="relative">
+                  <div class="absolute top-3.5 left-3.5 pointer-events-none text-slate-500">
+                    <i data-lucide="message-square" class="w-4 h-4"></i>
+                  </div>
+                  <textarea id="user_message" name="message" rows="5" required class="w-full bg-slate-950/60 border border-slate-800 rounded-xl py-3 pl-10 pr-4 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-950/50 transition-colors resize-none" placeholder="Enter your message here..."></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="w-full py-4 bg-gradient-to-r from-violet-600 to-cyan-600 text-white font-bold rounded-xl shadow-lg hover:shadow-glow-cyan shadow-violet-950/30 hover:scale-[1.01] transition-all flex items-center justify-center space-x-2" id="form-submit-btn">
+                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white hidden" id="btn-spinner" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <span id="btn-text">Send Message</span>
+              </button>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 bg-slate-950 border-t border-slate-900 relative">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex flex-col items-center md:items-start space-y-2">
+        <a href="#hero" class="text-xl font-bold font-heading">
+          <span class="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">Kona</span>
+          <span class="text-violet-500 font-extrabold">Venkat</span>
+        </a>
+        <p class="text-xs text-slate-500 font-light">&copy; 2026 Kona Venkat. All rights reserved.</p>
+      </div>
+
+      <!-- Quick links -->
+      <div class="flex flex-wrap justify-center gap-6 text-sm font-medium text-slate-400">
+        <a href="#hero" class="hover:text-violet-400 transition-colors">Home</a>
+        <a href="#about" class="hover:text-violet-400 transition-colors">About Me</a>
+        <a href="#skills" class="hover:text-violet-400 transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-violet-400 transition-colors">Projects</a>
+        <a href="#programming" class="hover:text-violet-400 transition-colors">Programming</a>
+        <a href="#certifications" class="hover:text-violet-400 transition-colors">Certifications</a>
+        <a href="#contact" class="hover:text-violet-400 transition-colors">Contact</a>
+      </div>
+
+      <!-- Scroll up -->
+      <a href="#hero" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 hover:border-violet-500 text-slate-400 hover:text-white flex items-center justify-center transition-all shadow-md hover:scale-105" aria-label="Scroll to Top">
+        <i data-lucide="chevron-up" class="w-5 h-5"></i>
+      </a>
+
+    </div>
+  </footer>
+
+  <!-- Script link -->
+  <script src="assets/script.js"></script>
+</body>
+</html>
